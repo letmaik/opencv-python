@@ -1,7 +1,7 @@
 environment:
   matrix:
     - PYTHON: "C:\\mypython"
-      PYTHON_URL: "https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe"
+      PYTHON_URL: "https://www.python.org/ftp/python/3.9.2/python-3.9.2-amd64.exe"
       ENABLE_CONTRIB: 0
       ENABLE_HEADLESS: 0
 
