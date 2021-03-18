@@ -1,17 +1,7 @@
 environment:
   matrix:
-    - PYTHON: "C:\\Python37-x64-dbg"
+    - PYTHON: "C:\\mypython"
       PYTHON_URL: "https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe"
-      ENABLE_CONTRIB: 0
-      ENABLE_HEADLESS: 0
-
-    - PYTHON: "C:\\Python38-x64-dbg"
-      PYTHON_URL: "https://www.python.org/ftp/python/3.8.8/python-3.8.8-amd64.exe"
-      ENABLE_CONTRIB: 0
-      ENABLE_HEADLESS: 0
-
-    - PYTHON: "C:\\Python39-x64-dbg"
-      PYTHON_URL: "https://www.python.org/ftp/python/3.9.2/python-3.9.2-amd64.exe"
       ENABLE_CONTRIB: 0
       ENABLE_HEADLESS: 0
 
