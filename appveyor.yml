@@ -1,22 +1,19 @@
 environment:
   matrix:
-    - PYTHON: "C:\\Python37-x64"
+    - PYTHON: "C:\\Python37-x64-dbg"
       ENABLE_CONTRIB: 0
       ENABLE_HEADLESS: 0
 
-    - PYTHON: "C:\\Python38-x64"
+    - PYTHON: "C:\\Python38-x64-dbg"
       ENABLE_CONTRIB: 0
       ENABLE_HEADLESS: 0
 
-    - PYTHON: "C:\\Python39-x64"
+    - PYTHON: "C:\\Python39-x64-dbg"
       ENABLE_CONTRIB: 0
       ENABLE_HEADLESS: 0
 
 install:
-  - ps: |
-      if (-not (Test-Path $env:PYTHON)) {
-        .\install_python.ps1
-      }
+  - ps: .\install_python.ps1
   - ps: if (-not (Test-Path $env:PYTHON)) { throw "No $env:PYTHON" }
   - "set PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
   - python --version
