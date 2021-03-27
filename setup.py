@@ -38,7 +38,8 @@ def main():
     numpy_version = "numpy>=%s" % minimum_supported_numpy
 
     python_version = cmaker.CMaker.get_python_version()
-    python_lib_path = cmaker.CMaker.get_python_library(python_version).replace(
+    # cmaker.CMaker.get_python_library(python_version)
+    python_lib_path = os.path.join(os.path.dirname(sys.executable), 'libs', 'python39_d.lib').replace(
         "\\", "/"
     )
     python_include_dir = cmaker.CMaker.get_python_include_dir(python_version).replace(
