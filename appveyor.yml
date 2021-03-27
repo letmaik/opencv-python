@@ -16,7 +16,7 @@ build_script:
     "%PYTHON%\\python.exe" -m pip install --upgrade pip
     "%PYTHON%\\python.exe" -m pip install --upgrade setuptools
     "%PYTHON%\\python.exe" -m pip install scikit-build numpy
-    set "CI_BUILD=1" && "%PYTHON%\\python.exe" setup.py bdist_wheel --build-type=Debug
+    set "CI_BUILD=1" && "%PYTHON%\\python.exe" -u setup.py bdist_wheel --build-type=Debug
 
 before_test:
 - ps: |
